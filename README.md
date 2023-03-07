@@ -6,7 +6,7 @@ This app is a fullstack Django build for our 4th project at General Assembly Imm
 ***
 ## Technologies Used
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,vscode,js,django,py,postgres,jquery,figma,git,github,heroku,&perline=4)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,vscode,js,django,py,postgres,jquery,figma,git,github,vercel,&perline=4)](https://skillicons.dev)
 
 - HTML5
 - CSS3
@@ -19,7 +19,7 @@ This app is a fullstack Django build for our 4th project at General Assembly Imm
 - Trello
 - Figma
 - Git/Github
-- Heroku
+- Vercel
 
 ***
 ## Screenshots
