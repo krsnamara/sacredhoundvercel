@@ -1,0 +1,23 @@
+{% extends 'base.html' %} 
+{% block bodyclass %}
+class="body-contact"
+{% endblock %}
+
+{% block mainClass %}
+main-class-forms
+{% endblock %}
+
+{% block content %}
+<h1>Sign Up</h1>
+
+{% if error_message %}
+<p class="red-text">{{ error_message }}</p>
+{% endif %}
+<div class="form">
+    <form method="post" action="{% url 'signup' %}">
+        {% csrf_token %} {{ form.as_p }}
+        <input type="submit" class="btn" value="signup" />
+    </form>
+</div>
+
+{% endblock %}

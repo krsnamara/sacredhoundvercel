@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sacred Hound Design</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </head>
+  <body {% block bodyclass %} {% endblock %} >
+    <header class="">
+      <nav>
+        <div class="nav-wrapper">
+          <ul>
+            <li>
+              <img class="logo-img" src="https://i.etsystatic.com/isla/432844/52953642/isla_180x180.52953642_o764eqcn.jpg?version=0" alt="logo">
+            </li>
+          </ul>
+          <ul class="center">
+            <li><a class=" black-text darken-4" href="/">home</a></li>
+            <li><a class=" black-text darken-4" href="/about">about</a></li>
+            <li><a class=" black-text darken-4" href="/shop">shop</a></li>
+            <li><a class=" black-text darken-4" href="/contact">contact</a></li>
+            {% if user.is_authenticated %}
+            <li><a class=" black-text darken-4" href={% url 'cart' %}>view cart</a></li>
+            <li><a class=" black-text darken-4" href={% url 'logout' %}>log out</a></li>
+            {% else %}
+            <li><a class='admin-trigger black-text darken-4' href='' data-target='dropdown3'>login</a></li>
+            {% endif %}
+          </ul>
+          {% comment %} <ul id='dropdown1' class='dropdown-content white-text'>
+            {% if user.is_authenticated %}
+            <li><a class=" black-text darken-4" href={% url 'carts' %}>view all carts</a></li>
+            {% comment %} <li><a class=" black-text darken-4" href={% url 'carts_create' %}>create cart</a></li> {% endcomment %}
+            {% comment %} {% else %}
+            {% endif %} {% endcomment %}
+          
+          <ul id='dropdown3' class='dropdown-content white-text'>
+            {% if user.is_authenticated %}
+            <li><a class=" black-text darken-4" href="/admin">admin</a></li>
+            <li><a class=" black-text darken-4" href={% url 'logout' %}>log out</a></li>
+            {% else %}
+            <li><a class=" black-text darken-4" href="/admin">admin</a></li>
+            <li><a class=" black-text darken-4" href="{% url 'login' %}">log in</a></li>
+            <li><a class=" black-text darken-4" href="{% url 'signup' %}">create user</a></li>
+            {% endif %}
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="{% block mainClass %}{% endblock %}">{% block content %} {% endblock %}</main>
+    <footer class="page-footer">
+      {% if user.is_authenticated %}
+      <a class="btn" href="/admin">admin</a>
+      {% block footer %} {% endblock %}
+      {% else %}
+      {% endif %}
+      <div class="right black-text darken-4">
+        All Rights Reserved, © 2023 Sacred Hound Designs  
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script>
+  $('.cart-trigger').dropdown({
+    coverTrigger: false,
+    hover: true
+  });
+  $('.admin-trigger').dropdown({
+    coverTrigger: false,
+    hover: true
+  });
+
+</script>

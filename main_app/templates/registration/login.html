@@ -1,0 +1,22 @@
+{% extends 'base.html' %} 
+{% block bodyclass %}
+class="body-contact"
+{% endblock %}
+
+{% block mainClass %}
+main-class-forms
+{% endblock %}
+
+{% block content %}
+<div> 
+    <h1>Log In</h1>
+    
+    <div class="form">
+        <form method="post" action="{% url 'login' %}">
+            {% csrf_token %} {{ form.as_p }}
+            <input type="submit" class="btn" value="login" />
+        </form>
+    </div>
+</div>
+    
+{% endblock %}

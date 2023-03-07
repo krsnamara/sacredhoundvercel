@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block bodyclass %}
+class="body-contact"
+{% endblock %}
+{% block mainClass %}
+main-class-forms
+{% endblock %}
+{% block content %}
+<h3>Pick a Cart</h3>
+   
+{% for cart in carts %}
+<div class="form">
+
+  <div class="card">
+    <a href="{% url 'carts_detail' cart.id %}">
+      <div class="card-content">
+        <p>Cart Name: {{ cart.name }} </p>
+      </div>
+    </a>
+  </div>
+</div>
+  {% endfor %} {% endblock %}

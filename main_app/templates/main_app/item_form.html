@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block bodyclass %}
+class="body-contact"
+{% endblock %}
+
+{% block mainClass %}
+main-class-forms
+{% endblock %}
+
+{% block content %}
+<!-- Leaving the action empty makes the form post to the same url used to display it -->
+<form action="" method="post">
+    <div class="form">
+    <!-- Django requires the following for security purposes -->
+    {% csrf_token %}
+    {% if object %}
+    <h1> Edit the item: <span class="teal-text">{{ object.name }}</span></h1>
+    {% else %}
+    <h1>Add Item</h1>
+    {% endif %}
+    <table>
+        <!-- Render the inputs inside of <tr>s & <td>s -->
+        {{ form.as_table }}
+    </table>    
+    <input type="submit" value="Submit!" class="btn" />
+</div>
+</form>
+{% endblock %}

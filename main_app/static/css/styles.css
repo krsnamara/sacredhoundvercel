@@ -1,0 +1,196 @@
+/* body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+a {
+    color: black;
+}
+
+.center {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: end;
+}
+
+.logo-img {
+    margin-top: 20px;
+    height: 150px;
+    mix-blend-mode:screen;
+}
+
+/* NAV STYLING */
+.nav-spacer {
+    height: 150px;
+}
+
+nav {
+    height: 150px;
+    background-color: rgb(0, 128, 128, .7);
+}
+.nav-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: solid rgb(2, 86, 86) 3px;
+}
+
+/* FOOTER STYLING */
+.page-footer{
+    border-top: solid rgb(2, 86, 86) 3px;
+    background-color: rgb(0, 128, 128, .7);
+}
+
+footer {
+    color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    /* position: sticky; */
+    justify-content: baseline;
+    height: 100px;
+    padding-top: 0;
+    text-align: right;
+    background-color: white;
+    border-top: solid black 2px;
+  }
+  
+  /* FORMS STYLING*/
+
+  .main-class-forms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form {
+    background-color: rgb(109, 255, 240, .5);
+    border: solid teal 3px;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    color: black;
+    width: 400px;
+    }
+    
+    label {
+        color: black;
+    }
+    
+    td>input {
+        border-bottom: 1px solid black;
+    }
+    
+    
+    /* HOME PAGE STYLING */
+    
+    .background-home{
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url(https://i.etsystatic.com/33955933/r/il/050297/4066686972/il_794xN.4066686972_g0z6.jpg);
+        background-size:cover;
+    }
+    
+    .home-container, .aboutdiv{
+        background-color: rgb(250, 225, 194, .3);
+        border: solid rgba(223, 155, 73, 0.4) 3px;
+        border-radius: 15px;
+        text-align: center;
+    }
+    
+    /* ABOUT PAGE STYLING */
+    .background-about {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url(https://i.imgur.com/AzDFeoM.png);
+        /* background-image: url(https://i.imgur.com/ahQVtaP.png); */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .aboutMain{
+        margin-top: 150px;
+        height: 60vh;
+        width: auto;
+    }
+    
+    /* CONTACT STYING */
+.body-contact{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(https://vtecostudies.org/wp-content/uploads/2014/06/mountain-sunrise.jpg);
+    background-size:cover;
+}
+
+/* SHOP PAGES STYLING */
+.background-shop {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.itemcard {
+    display: flex;
+    flex-direction: column;
+}
+.itemwrapper {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px teal;
+    border-radius: 1rem;
+    background-color: rgb(0, 128, 128, .3);
+    max-width: 290px;
+    padding: 5px;
+}
+.shoppage {
+    margin: 0px 150px 50px 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.shop-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.shop-card-image {
+    max-width: 200px;
+}
+
+/* DETAIL PAGE STYLING */
+.detail-container{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    gap: 30px;
+}
+
+.detail-image {
+    height:400px;
+}
+
+/* CART DISPLAY */
+
+.cartdisplay {
+    display: flex;
+    justify-content: space-around;
+}
+
+.block {
+    display: block;
+    justify-content: space-between;
+}

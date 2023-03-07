@@ -1,0 +1,29 @@
+{% extends 'base.html' %} 
+{% block bodyclass %}
+class="body-contact"
+{% endblock %}
+
+{% block mainClass %}
+main-class-forms
+{% endblock %}
+
+{% block content %}
+<div class="form">
+  <h1>Cart Details</h1>
+  {% if cart.items %}
+  {% for item in cart.items.all %}
+  <div>
+    <div class="cartdisplay">
+      <div class="block"> <p>{{ item.name }}</p></div>
+      <div class="block"> <p>${{ item.price }}</p></div>
+    </div>
+    <hr>
+  </div>
+  {% endfor %}
+  {% else %}
+  <h1>You have nothing in your cart.</h1>
+  {% endif %}
+</div>
+
+
+{% endblock %}
