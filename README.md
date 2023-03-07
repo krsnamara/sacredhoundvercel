@@ -1,4 +1,4 @@
-![Logo](/main_app/static/images/logo.jpeg)
+![Logo](https://github.com/krsnamara/sacredhoundstore/blob/master/main_app/static/images/logo.jpeg)
 # Ecommerce for Friends Project: An app built for Sacred Hound Designs.
 ***
 ## Description
@@ -23,21 +23,21 @@ This app is a fullstack Django build for our 4th project at General Assembly Imm
 
 ***
 ## Screenshots
-![erd](/main_app/static/images/erd.png)
+![erd](https://github.com/krsnamara/sacredhoundstore/raw/master/main_app/static/images/erd.png)
 <br>
 
-![auth](/main_app/static/images/authentication.png)
+![auth](https://github.com/krsnamara/sacredhoundstore/blob/master/main_app/static/images/authentication.png)
 <br>
 
-![landing](/main_app/static/images/landing_page.png)
-![about](/main_app/static/images/about_page.png)
-![store](/main_app/static/images/store.png)
-![item](/main_app/static/images/item_page.png)
+![landing](https://github.com/krsnamara/sacredhoundstore/raw/master/main_app/static/images/landing_page.png)
+![about](https://github.com/krsnamara/sacredhoundstore/raw/master/main_app/static/images/about_page.png)
+![store](https://github.com/krsnamara/sacredhoundstore/raw/master/main_app/static/images/store.png)
+![item](https://github.com/krsnamara/sacredhoundstore/raw/master/main_app/static/images/item_page.png)
 <br>
 ***
 ### Production version
 
-![production](/main_app/static/images/production.png)
+![production](https://github.com/krsnamara/sacredhoundstore/raw/master/main_app/static/images/production.png)
 ***
 ## Deployed Website
 
